@@ -1,0 +1,16 @@
+local UIS = game:GetService("UserInputService")
+
+while true do wait()
+if humanoid.health < 1 then
+local deathposition = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+end
+end
+
+
+function InputBegan(Input)
+if Input.KeyCode == Enum.KeyCode.Insert then
+game.Players.LocalPlayer.HumanoidRootPart.CFrame = deathposition
+end
+end
+
+UIS.InputBegan:Connect(InputBegan)
